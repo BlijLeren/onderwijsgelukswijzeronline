@@ -70,6 +70,7 @@ body:has(#stats-view.active) {
   left: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  padding-top: env(safe-area-inset-top); /* Add iOS safe area support */
 }
 
 .view.active {
@@ -208,7 +209,8 @@ button {
 
 #stats-view {
   align-items: center;
-  margin-top: 20px;
+  margin-top: 0; /* Remove margin that was causing the shift */
+  padding-top: 20px; /* Add padding instead */
   font-size: 1em;
   position: fixed;
   height: 100%;
@@ -234,7 +236,6 @@ button {
 .stat-bar-container {
   display: flex;
   height: 300px;
-  background: #f0f0f0;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -245,7 +246,7 @@ button {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: #1995fa;
+  background-color: #1995fa;
   transition: height 1s ease-out;
 }
 
@@ -256,7 +257,7 @@ button {
 }
 
 #agora-stat {
-  background: #ffbf00;
+  background-color: #ffbf00;
 }
 
 .stat-percentage {
@@ -285,8 +286,8 @@ button {
 
 #back-button {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  bottom: 2%;
+  left: 2%;
   z-index: 100;
   border-radius: 20px;
   background-color: #c2c2c2;
@@ -321,7 +322,7 @@ button {
   position: absolute;
   width: 8px;
   height: 100%;
-  background: rgb(49, 49, 49);
+  background-color: rgb(49, 49, 49);
   top: 0;
   left: 50%;
   border-radius: 25px;
@@ -367,6 +368,7 @@ h3 {
   color: #202020;
   font-weight: 800;
   font-size: 1.5em;
+  max-width: 90%;
 }
 
 .bottomline {
