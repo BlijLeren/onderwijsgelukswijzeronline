@@ -38,10 +38,12 @@ body {
 
 body:has(#welcome-view.active) {
   background-color: #1995fa;
+  overflow: hidden;
 }
 
 body:has(#quiz-view.active) {
   background-color: white;
+  overflow: hidden;
 }
 
 body:has(#stats-view.active) {
@@ -142,7 +144,7 @@ button {
   border-radius: 20px;
   cursor: pointer;
   transition: transform 0.2s;
-  min-height: 200px;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
