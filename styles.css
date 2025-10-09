@@ -20,10 +20,9 @@ font-weight: 900;
 font-style: normal;
 font-style: italic; */
 
-/* 
 * {
-    outline: 1px solid red !important;
-} */
+  outline: 1px solid red !important;
+}
 
 body {
   margin: 0;
@@ -93,14 +92,19 @@ body {
   align-items: center;
 }
 
-.quiz-header {
-  position: absolute;
-  top: 4rem;
-  left: 50%;
-  transform: translateX(-50%);
+#quiz-content {
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 80%;
+}
+
+.quiz-header {
+  position: relative;
+  text-align: center;
+  max-width: 100%;
   font-size: 1em;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .options-container {

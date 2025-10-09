@@ -6,6 +6,10 @@
     <title>Onderwijs Kieswijzer</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://use.typekit.net/cjm1bud.css" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
   </head>
   <body>
     <div id="welcome-view" class="view active">
@@ -76,19 +80,21 @@
     </div>
 
     <div id="quiz-view" class="view">
-      <div class="quiz-header">
-        <div id="progress"></div>
-        <h2 id="current-topic"></h2>
-      </div>
-      <button id="back-button" style="display: none">←</button>
-      <div class="options-container">
-        <div class="option" id="option1">
-          <p class="child-text"></p>
-          <p class="parent-text"></p>
+      <div id="quiz-content">
+        <div class="quiz-header">
+          <div id="progress"></div>
+          <h2 id="current-topic"></h2>
         </div>
-        <div class="option" id="option2">
-          <p class="child-text"></p>
-          <p class="parent-text"></p>
+        <button id="back-button" style="display: none">←</button>
+        <div class="options-container">
+          <div class="option" id="option1">
+            <p class="child-text"></p>
+            <p class="parent-text"></p>
+          </div>
+          <div class="option" id="option2">
+            <p class="child-text"></p>
+            <p class="parent-text"></p>
+          </div>
         </div>
       </div>
     </div>
