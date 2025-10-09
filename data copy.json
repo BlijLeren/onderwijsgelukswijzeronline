@@ -2,7 +2,6 @@
   "onderdelen": [
     {
       "onderdeelnaam": "Structuur & planning",
-      "thema": "Structuur",
       "vraag": "Wat vind jij belangrijk voor een schooldag?",
       "opties": {
         "Regulier": {
@@ -17,7 +16,6 @@
     },
     {
       "onderdeelnaam": "Tempo & keuzes",
-      "thema": "Structuur",
       "vraag": "Hoe wil je dat leren gaat voor jou?",
       "opties": {
         "Regulier": {
@@ -32,7 +30,6 @@
     },
     {
       "onderdeelnaam": "Leerdoelen & opdrachten",
-      "thema": "Structuur",
       "vraag": "Wat helpt jou om nieuwe dingen te leren?",
       "opties": {
         "Regulier": {
@@ -47,7 +44,6 @@
     },
     {
       "onderdeelnaam": "Evaluatie & feedback",
-      "thema": "Structuur",
       "vraag": "Hoe wil je graag te horen krijgen of je iets goed hebt gedaan?",
       "opties": {
         "Regulier": {
@@ -62,7 +58,6 @@
     },
     {
       "onderdeelnaam": "Projecten & toepassing",
-      "thema": "Nieuwsgierigheid",
       "vraag": "Wanneer vind jij leren het leukst?",
       "opties": {
         "Regulier": {
@@ -77,7 +72,6 @@
     },
     {
       "onderdeelnaam": "Nieuwsgierigheid & initiatief",
-      "thema": "Nieuwsgierigheid",
       "vraag": "Wat doe je graag als je iets interessant vindt?",
       "opties": {
         "Regulier": {
@@ -92,7 +86,6 @@
     },
     {
       "onderdeelnaam": "Ondersteuning & begeleiding",
-      "thema": "Samenwerking",
       "vraag": "Op welke manier wil je geholpen worden bij leren?",
       "opties": {
         "Regulier": {
@@ -107,8 +100,7 @@
     },
     {
       "onderdeelnaam": "Samenwerking & sociaal leren",
-      "thema": "Samenwerking",
-      "vraag": "Hoe werk je het liefst samen met anderen?",
+       "vraag": "Hoe werk je het liefst samen met anderen?",
       "opties": {
         "Regulier": {
           "kind": "Je werkt samen aan opdrachten in de les.",
@@ -122,7 +114,6 @@
     },
     {
       "onderdeelnaam": "Zelfstandigheid & keuzes",
-      "thema": "Nieuwsgierigheid",
       "vraag": "Over welke dingen wil jij zelf beslissen op school?",
       "opties": {
         "Regulier": {
@@ -137,13 +128,12 @@
     },
     {
       "onderdeelnaam": "Kritisch denken & probleemoplossing",
-      "thema": "Nieuwsgierigheid",
       "vraag": "Wat wil jij doen als je iets niet meteen begrijpt en meer wilt weten?",
       "opties": {
         "Regulier": {
           "kind": "Je volgt de stappen van de les of opdracht om het antwoord te vinden.",
           "ouder": "Leerlingen werken binnen de kaders van de opdrachten en toetsen."
-        },
+      },
         "Agora": {
           "kind": "Je blijft vragen en zoekt uit hoe het echt werkt, tot je het begrijpt.",
           "ouder": "Leerlingen onderzoeken onderwerpen door eigen vragen te stellen en te verkennen, ondersteund door docenten indien nodig."
@@ -152,7 +142,6 @@
     },
     {
       "onderdeelnaam": "Balans structuur vs vrijheid",
-      "thema": "Structuur",
       "vraag": "Hoe wil jij leren en je opdrachten doen op school?",      
       "opties": {
         "Regulier": {
@@ -167,8 +156,7 @@
     },
     {
       "onderdeelnaam": "Inzicht & Reflectie",
-      "thema": "Motivatie",
-      "vraag": "Hoe wil jij terugkijken op wat je hebt geleerd?",
+      "vraag": "Hoe wil jij wil jij terugkijken op wat je hebt geleerd?",
       "opties": {
         "Regulier": {
           "kind": "Je kijkt naar je cijfers voor opdrachten en toetsen om te zien wat goed ging.",
@@ -178,11 +166,10 @@
           "kind": "Je kijkt naar wat je zelf hebt gedaan, en praat hierover mede leerlingen en leraren.",
           "ouder": "Ouders krijgen inzicht via de reflecties die hun kind bijhoudt en via gesprekken over sterke en zwakke punten, met een duidelijk overzicht van vaardigheden en ontwikkeling op papier."
         }
-      }
+       }
     },
     {
       "onderdeelnaam": "Motivatie & leren",
-      "thema": "Motivatie",
       "vraag": "Wat vind jij belangrijker bij leren?",
       "opties": {
         "Regulier": {
@@ -191,9 +178,9 @@
         },
         "Agora": {
           "kind": "Je wordt geholpen om te doen waar je nieuwsgierig naar bent, waar soms ook iets minder leuks voor gedaan moet worden",
-          "ouder": "De nadruk ligt op interesses en doen waar je nieuwsgierig naar bent. Dit stimuleert intrinsieke motivatie, wat kan zorgen voor meer betrokkenheid, creativiteit en langdurige autonomie in leren."
+          "ouder": "De nadruk ligt op interesses en doen waar je gelukkig van wordt. Dit stimuleert intrinsieke motivatie, wat kan zorgen voor meer betrokkenheid, creativiteit en langdurige interesse in leren."
         }
-      }
+       }
     }
   ]
 }

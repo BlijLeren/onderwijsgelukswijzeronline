@@ -27,9 +27,12 @@ function startQuiz() {
 
 function showQuestion() {
     const question = quizData[currentQuestion];
-    document.getElementById('current-topic').textContent = question.onderdeelnaam;
     document.getElementById('progress').textContent = 
-        `Vraag ${currentQuestion + 1} van ${quizData.length}`;
+        `${currentQuestion + 1}. ${question.onderdeelnaam}`;
+    document.getElementById('current-topic').textContent = question.vraag;
+    // document.getElementById('current-topic').textContent = question.onderdeelnaam;
+    // document.getElementById('progress').textContent = 
+    //     `Vraag ${currentQuestion + 1} van ${quizData.length}`;
     
     // Show/hide back button based on question number
     document.getElementById('back-button').style.display = 
@@ -81,18 +84,38 @@ function goBack() {
 
 function showResults() {
     showView('stats-view');
+    
+    // Calculate overall stats
     const regulierCount = choices.filter(c => c === 'Regulier').length;
     const agoraCount = choices.filter(c => c === 'Agora').length;
     const total = choices.length;
 
+    // Show overall percentages
     const regulierPercentage = Math.round(regulierCount/total * 100);
     const agoraPercentage = Math.round(agoraCount/total * 100);
 
     document.getElementById('regulier-stat').style.height = `${regulierPercentage}%`;
     document.getElementById('agora-stat').style.height = `${agoraPercentage}%`;
-    
     document.getElementById('regulier-percentage').textContent = `${regulierPercentage}%`;
     document.getElementById('agora-percentage').textContent = `${agoraPercentage}%`;
+
+    // Calculate theme stats
+    const themes = ['Structuur', 'Nieuwsgierigheid', 'Samenwerking', 'Motivatie'];
+    themes.forEach(theme => {
+        const themeQuestions = quizData.filter(q => q.thema === theme);
+        const themeChoices = themeQuestions.map((_, idx) => 
+            choices[quizData.findIndex(q => q.thema === theme && q === themeQuestions[idx])]
+        );
+        
+        const themeAgora = themeChoices.filter(c => c === 'Agora').length;
+        const themePercentage = Math.round((themeAgora / themeQuestions.length) * 100);
+        
+        const statElement = document.getElementById(`${theme.toLowerCase()}-stat`);
+        const percentElement = document.getElementById(`${theme.toLowerCase()}-percentage`);
+        
+        statElement.style.height = `${themePercentage}%`;
+        percentElement.textContent = `${themePercentage}%`;
+    });
 }
 
 function showView(viewId) {
