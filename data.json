@@ -2,6 +2,7 @@
   "onderdelen": [
     {
       "onderdeelnaam": "Structuur & planning",
+      "vraag": "Wat vind jij belangrijk voor een schooldag?",
       "opties": {
         "Regulier": {
           "kind": "Elke dag vaste lessen.",
@@ -15,6 +16,7 @@
     },
     {
       "onderdeelnaam": "Tempo & keuzes",
+      "vraag": "Hoe wil je dat leren gaat voor jou?",
       "opties": {
         "Regulier": {
           "kind": "Iedereen leert tegelijk.",
@@ -28,6 +30,7 @@
     },
     {
       "onderdeelnaam": "Leerdoelen & opdrachten",
+      "vraag": "Wat helpt jou om nieuwe dingen te leren?",
       "opties": {
         "Regulier": {
           "kind": "De leraar zegt wat je leert.",
@@ -41,35 +44,38 @@
     },
     {
       "onderdeelnaam": "Evaluatie & feedback",
+      "vraag": "Hoe wil je graag te horen krijgen of je iets goed hebt gedaan?",
       "opties": {
         "Regulier": {
           "kind": "Je krijgt cijfers.",
           "ouder": "Voortgang wordt beoordeeld met toetsen en rapportcijfers."
         },
         "Agora": {
-          "kind": "Je krijgt tips in plaats van cijfers.",
+          "kind": "Je krijgt tips en tops in plaats van cijfers.",
           "ouder": "Feedback en reflectie vormen de beoordeling."
         }
       }
     },
     {
       "onderdeelnaam": "Projecten & toepassing",
+      "vraag": "Wanneer vind jij leren het leukst?",
       "opties": {
         "Regulier": {
           "kind": "Je maakt opdrachten uit boeken.",
           "ouder": "Vaste projecten binnen vakken."
         },
         "Agora": {
-          "kind": "Je maakt dingen die jij bedenkt.",
+          "kind": "Je maakt opdrachten over thema's die jij interessant vind.",
           "ouder": "Projectgericht leren vanuit eigen ideeën en interesses."
         }
       }
     },
     {
       "onderdeelnaam": "Nieuwsgierigheid & initiatief",
+      "vraag": "Wat doe je graag als je iets interessant vindt?",
       "opties": {
         "Regulier": {
-          "kind": "Je leert wat er in de les staat.",
+          "kind": "Je leert wat er in de les wordt verteld.",
           "ouder": "Nieuwsgierigheid binnen vaste lesstof."
         },
         "Agora": {
@@ -80,6 +86,7 @@
     },
     {
       "onderdeelnaam": "Ondersteuning & begeleiding",
+      "vraag": "Op welke manier wil je geholpen worden bij leren?",
       "opties": {
         "Regulier": {
           "kind": "De leraar helpt de klas.",
@@ -93,9 +100,10 @@
     },
     {
       "onderdeelnaam": "Samenwerking & sociaal leren",
+       "vraag": "Hoe werk je het liefst samen met anderen?",
       "opties": {
         "Regulier": {
-          "kind": "Je werkt samen aan opdrachten.",
+          "kind": "Je werkt samen aan opdrachten in de les.",
           "ouder": "Groepswerk binnen vakken."
         },
         "Agora": {
@@ -106,45 +114,35 @@
     },
     {
       "onderdeelnaam": "Zelfstandigheid & keuzes",
+      "vraag": "Over welke dingen wil jij zelf beslissen op school?",
       "opties": {
         "Regulier": {
-          "kind": "Je werkt alleen aan je taken.",
-          "ouder": "Zelfstandig werken binnen lessen."
+          "kind": "Je kiest hoe je opdrachten uitvoert binnen de les.",
+          "ouder": "Leerlingen maken keuzes binnen de kaders van de vakken en opdrachten."
         },
         "Agora": {
-          "kind": "Je kiest wat je doet, met hulp.",
-          "ouder": "Zelf keuzes maken, met begeleiding van coach of team."
+          "kind": "Je kiest welke onderwerpen en opdrachten je wilt doen.",
+          "ouder": "Leerlingen bepalen zelf welke leerdoelen en projecten ze volgen, ondersteund door een coach of docent."
         }
       }
     },
     {
       "onderdeelnaam": "Kritisch denken & probleemoplossing",
+      "vraag": "Wat wil jij doen als je iets niet meteen begrijpt en meer wilt weten?",
       "opties": {
         "Regulier": {
-          "kind": "Je maakt wat de leraar vraagt.",
-          "ouder": "Denkstappen binnen vaste opdrachten."
-        },
+          "kind": "Je volgt de stappen van de les of opdracht om het antwoord te vinden.",
+          "ouder": "Leerlingen werken binnen de kaders van de opdrachten en toetsen."
+      },
         "Agora": {
-          "kind": "Je zoekt zelf dingen uit.",
-          "ouder": "Onderzoekend en kritisch leren via eigen projecten."
-        }
-      }
-    },
-    {
-      "onderdeelnaam": "Reflectie & zelfinzicht",
-      "opties": {
-        "Regulier": {
-          "kind": "Je hoort of het goed was.",
-          "ouder": "Reflectie via cijfers en korte feedback."
-        },
-        "Agora": {
-          "kind": "Je denkt zelf na over wat beter kan.",
-          "ouder": "Regelmatige reflectie en gesprek over groei."
+          "kind": "Je blijft vragen en zoekt uit hoe het echt werkt, tot je het begrijpt.",
+          "ouder": "Leerlingen onderzoeken onderwerpen door eigen vragen te stellen en te verkennen, ondersteund door docenten indien nodig."
         }
       }
     },
     {
       "onderdeelnaam": "Balans structuur vs vrijheid",
+      "vraag": "Hoe wil jij leren en je opdrachten doen op school?",      
       "opties": {
         "Regulier": {
           "kind": "Je weet precies wat je moet doen.",
@@ -157,17 +155,32 @@
       }
     },
     {
-      "onderdeelnaam": "Voortgang & inzicht",
+      "onderdeelnaam": "Inzicht & Reflectie",
+      "vraag": "Hoe wil jij wil jij terugkijken op wat je hebt geleerd?",
       "opties": {
         "Regulier": {
-          "kind": "Je ziet je cijfers.",
-          "ouder": "Overzicht via rapporten en mentorgesprekken."
+          "kind": "Je kijkt naar je cijfers voor opdrachten en toetsen om te zien wat goed ging.",
+          "ouder": "Ouders volgen voortgang via cijfers, opdrachten en korte feedbackmomenten."
         },
         "Agora": {
-          "kind": "Je ziet waar je goed in bent.",
-          "ouder": "Inzicht in vaardigheden en persoonlijke groei."
+          "kind": "Je kijkt naar wat je zelf hebt gedaan, en praat hierover mede leerlingen en leraren.",
+          "ouder": "Ouders krijgen inzicht via de reflecties die hun kind bijhoudt en via gesprekken over sterke en zwakke punten, met een duidelijk overzicht van vaardigheden en ontwikkeling op papier."
         }
-      }
+       }
+    },
+    {
+      "onderdeelnaam": "Motivatie & leren",
+      "vraag": "Wat vind jij belangrijker bij leren?",
+      "opties": {
+        "Regulier": {
+          "kind": "Je doet wat nodig is om goede cijfers en resultaten te halen, ook als het soms minder leuk is.",
+          "ouder": "De nadruk ligt op het behalen van meetbare resultaten en toetsen. Dit uit zich als externe motivatie en legt de focus op prestaties."
+        },
+        "Agora": {
+          "kind": "Je wordt geholpen om te doen waar je nieuwsgierig naar bent, waar soms ook iets minder leuks voor gedaan moet worden",
+          "ouder": "De nadruk ligt op interesses en doen waar je gelukkig van wordt. Dit stimuleert intrinsieke motivatie, wat kan zorgen voor meer betrokkenheid, creativiteit en langdurige interesse in leren."
+        }
+       }
     }
   ]
 }
