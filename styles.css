@@ -118,6 +118,7 @@ button {
     justify-content: center;
     font-weight: 800;
     color: #ffffff;
+    transform-origin: center;
 }
 
 #option1 {
@@ -132,6 +133,16 @@ button {
     transform: scale(1.02);
 }
 
+.option.clicking {
+    animation: clickScale 0.3s ease-in-out;
+}
+
+@keyframes clickScale {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+
 .child-text {
     font-size: 1.2em;
     margin-bottom: 10px;
@@ -143,20 +154,23 @@ button {
     color: #ffffff;
 }
 
+#stats-view {
+    align-items: center;
+}
+
 .stats-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; 
+    max-width: 80%;
+    width: 100%;
 }
 
 .stat-bar {
-    margin: 15px 0;
     background-color: #f0f0f0;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 20px;
     text-align: center;
-    width: 120px;
+    width: 80%;
 }
 
 .stat-bar-container {
@@ -166,7 +180,7 @@ button {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .stat-bar-fill {
@@ -175,6 +189,12 @@ button {
     width: 100%;
     background: #1995fa;
     transition: height 1s ease-out;
+}
+
+.stat-label {
+    font-weight: 600;
+    justify-content: center;    /* center horizontally */
+    align-items: center;   
 }
 
 #agora-stat {

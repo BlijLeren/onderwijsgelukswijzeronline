@@ -45,8 +45,16 @@ function showQuestion() {
 }
 
 function selectOption(choice) {
-    if (isNavigating) return; // Prevent multiple rapid clicks
+    if (isNavigating) return;
     isNavigating = true;
+    
+    // Add animation class
+    const optionElement = choice === 'Regulier' ? 
+        document.getElementById('option1') : 
+        document.getElementById('option2');
+    
+    optionElement.classList.add('clicking');
+    setTimeout(() => optionElement.classList.remove('clicking'), 300);
     
     choices[currentQuestion] = choice; // Set choice at current index instead of pushing
     
