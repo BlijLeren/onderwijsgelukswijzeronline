@@ -30,9 +30,22 @@ body {
   text-align: center;
   height: 100vh;
   overflow-x: hidden;
-  background-color: #ffffff;
+  background-color: white; /* default background */
   font-family: "rig-sans", sans-serif;
   color: #202020;
+  transition: background-color 0.3s ease; /* smooth transition */
+}
+
+body:has(#welcome-view.active) {
+  background-color: #1995fa;
+}
+
+body:has(#quiz-view.active) {
+  background-color: white;
+}
+
+body:has(#stats-view.active) {
+  background-color: white;
 }
 
 .view {
@@ -62,7 +75,6 @@ body {
 #welcome-view {
   justify-content: center;
   align-items: center;
-  background-color: #1995fa;
   color: white;
 }
 
