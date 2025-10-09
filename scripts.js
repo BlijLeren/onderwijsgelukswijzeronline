@@ -103,18 +103,18 @@ function showResults() {
     const themes = ['Structuur', 'Nieuwsgierigheid', 'Samenwerking', 'Motivatie'];
     themes.forEach(theme => {
         const themeQuestions = quizData.filter(q => q.thema === theme);
-        const themeChoices = themeQuestions.map((_, idx) => 
-            choices[quizData.findIndex(q => q.thema === theme && q === themeQuestions[idx])]
-        );
+        const themeAnswers = themeQuestions.map(q => 
+            choices[quizData.indexOf(q)]
+        ).filter(c => c); // Filter out undefined answers
         
-        const themeAgora = themeChoices.filter(c => c === 'Agora').length;
-        const themePercentage = Math.round((themeAgora / themeQuestions.length) * 100);
-        
-        const statElement = document.getElementById(`${theme.toLowerCase()}-stat`);
-        const percentElement = document.getElementById(`${theme.toLowerCase()}-percentage`);
-        
-        statElement.style.height = `${themePercentage}%`;
-        percentElement.textContent = `${themePercentage}%`;
+        if (themeAnswers.length > 0) {
+            const themeAgora = themeAnswers.filter(c => c === 'Agora').length;
+            const themePercentage = (themeAgora / themeAnswers.length) * 100;
+            
+            const percentElement = document.getElementById(`${theme.toLowerCase()}-percentage`);
+            percentElement.style.left = `${themePercentage}%`;
+            percentElement.innerHTML = `<span class="stat-value">${Math.round(themePercentage)}%</span>`;
+        }
     });
 }
 
