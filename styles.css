@@ -381,6 +381,21 @@ h3 {
   color: #666;
 }
 
+.glink {
+  color: #ffbf00;
+  -webkit-text-fill-color: #ffbf00;
+}
+
+.glink:visited {
+  color: #ffbf00;
+  -webkit-text-fill-color: #ffbf00;
+}
+
+.glink:link {
+  color: #ffbf00;
+  -webkit-text-fill-color: #ffbf00;
+}
+
 @media (max-width: 600px) {
   .options-container {
     flex-direction: column;
