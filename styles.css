@@ -37,10 +37,10 @@ body {
   text-align: center;
   height: 100vh;
   overflow-x: hidden;
-  background-color: white; /* default background */
+  background-color: white;
   font-family: "rig-sans", sans-serif;
   color: #202020;
-  transition: background-color 0.3s ease; /* smooth transition */
+  transition: background-color 0.3s ease;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -70,7 +70,7 @@ body:has(#stats-view.active) {
   left: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding-top: env(safe-area-inset-top); /* Add iOS safe area support */
+  padding-top: env(safe-area-inset-top);
 }
 
 .view.active {
@@ -209,8 +209,8 @@ button {
 
 #stats-view {
   align-items: center;
-  margin-top: 0; /* Remove margin that was causing the shift */
-  padding-top: 20px; /* Add padding instead */
+  margin-top: 0;
+  padding-top: 20px;
   font-size: 1em;
   position: fixed;
   height: 100%;
@@ -252,7 +252,7 @@ button {
 
 .stat-label {
   font-weight: 600;
-  justify-content: center; /* center horizontally */
+  justify-content: center;
   align-items: center;
 }
 
